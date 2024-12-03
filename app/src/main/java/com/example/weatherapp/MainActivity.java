@@ -14,7 +14,7 @@ import java.net.URL;
 public class MainActivity extends AppCompatActivity {
 
     private TextView weatherInfo;
-    private final String API_KEY = "06fec289081632a9160150721c56059e";
+    private final String API_KEY = "6b522111641abead2c2725bcd2e4f183";
     private final String BASE_URL = "https://api.openweathermap.org/data/2.5/weather?q=";
 
 
