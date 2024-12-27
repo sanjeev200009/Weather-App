@@ -8,7 +8,6 @@
     android:background="@drawable/pic"
     tools:context=".MainActivity">
 
-    <!-- Header Section -->
     <TextView
         android:id="@+id/weatherInfo"
         android:layout_width="match_parent"
@@ -17,17 +16,15 @@
         android:layout_marginTop="80dp"
         android:gravity="center"
         android:padding="16dp"
-        android:text="Weather Information"
-        android:textColor="#FFFFFF"
+        android:text="Weather Information(Click the Button)"
+        android:fontFamily="@font/font1"
+        android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-
-    <!-- Weather Image -->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="200dp"
@@ -40,7 +37,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/weather_rafiki" />
 
-    <!-- Buttons Section -->
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -66,7 +62,9 @@
                 android:text="New York"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
-                android:elevation="4dp" />
+                android:elevation="4dp"
+                android:fontFamily="@font/font1"
+                android:textSize="20dp"/>
 
             <Button
                 android:id="@+id/btnLondon"
@@ -78,7 +76,9 @@
                 android:text="London"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
-                android:elevation="4dp" />
+                android:elevation="4dp"
+                android:fontFamily="@font/font1"
+                android:textSize="20dp"/>
 
             <Button
                 android:id="@+id/btnTokyo"
@@ -90,7 +90,9 @@
                 android:text="Tokyo"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
-                android:elevation="4dp" />
+                android:elevation="4dp"
+                android:fontFamily="@font/font1"
+                android:textSize="20dp"/>
 
             <Button
                 android:id="@+id/btnColombo"
@@ -102,7 +104,9 @@
                 android:text="Colombo"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
-                android:elevation="4dp" />
+                android:elevation="4dp"
+                android:fontFamily="@font/font1"
+                android:textSize="20dp"/>
 
             <Button
                 android:id="@+id/btnDubai"
@@ -114,7 +118,9 @@
                 android:text="Dubai"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
-                android:elevation="4dp" />
+                android:elevation="4dp"
+                android:fontFamily="@font/font1"
+                android:textSize="20dp"/>
 
             <Button
                 android:id="@+id/btnBack"
@@ -130,12 +136,13 @@
                 android:drawablePadding="8dp"
                 android:elevation="4dp"
                 android:contentDescription="Back Button"
-                android:layout_gravity="center"/>
-
+                android:layout_gravity="center"
+                android:fontFamily="@font/font1"
+                android:textSize="20dp"/>
         </LinearLayout>
     </ScrollView>
 
-    <!-- Footer Section -->
+
     <TextView
         android:id="@+id/footer"
         android:layout_width="wrap_content"
@@ -146,6 +153,7 @@
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/font1"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Hover (pressed) state -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#4A3BFF"
+            android:endColor="#7140FF"
+            android:angle="45" />
+            <corners android:radius="25dp" />
+        </shape>
+    </item>
+    <!-- Default state -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#6A5BFF"
+                android:endColor="#914EFF"
+                android:angle="45" />
+            <corners android:radius="25dp" />
+        </shape>
+    </item>
+</selector>

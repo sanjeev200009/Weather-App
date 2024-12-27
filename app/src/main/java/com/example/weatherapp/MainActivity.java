@@ -1,5 +1,6 @@
 package com.example.weatherapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,11 +18,22 @@ public class MainActivity extends AppCompatActivity {
     private final String API_KEY = "6b522111641abead2c2725bcd2e4f183";
     private final String BASE_URL = "https://api.openweathermap.org/data/2.5/weather?q=";
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //back button logic
+        Button buttonNavigate = findViewById(R.id.btnBack);
+        buttonNavigate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                startActivity(intent);
+            }
+        });
+
+        //Main content
 
         weatherInfo = findViewById(R.id.weatherInfo);
 
